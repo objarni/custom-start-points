@@ -1,0 +1,18 @@
+{
+  "display_name": "C++ Storage",
+  "visible_filenames": [
+    "cloud_storage.hpp",
+    "readme.txt",
+    "mock_cloud_storage.hpp",
+    "outputfile.hpp",
+    "storage.hpp",
+    "storage.tests.cpp",
+    "cyber-dojo.sh",
+    "makefile"
+  ],
+  "highlight_filenames": [ "readme.txt" ],
+  "hidden_filenames": [ ".*\\.gcov" ],
+  "image_name": "cyberdojofoundation/gpp_googlemock",
+  "filename_extension": [ ".cpp", ".hpp", ".c", ".h" ],
+  "tab_size": 4
+}
