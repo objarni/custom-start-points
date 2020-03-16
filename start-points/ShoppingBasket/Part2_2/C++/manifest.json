@@ -1,0 +1,16 @@
+{
+  "display_name": "C++ ShoppingBasket, Part 2 version 2",
+  "visible_filenames": [
+    "item.hpp",
+    "readme.txt",
+    "shopping_basket.hpp",
+    "shopping_basket.cpp",
+    "shopping_basket.2.tests.cpp",
+    "cyber-dojo.sh"
+  ],
+  "highlight_filenames": [ "readme.txt" ],
+  "hidden_filenames": [ ".*\\.gcov" ],
+  "image_name": "cyberdojofoundation/gpp_googletest",
+  "filename_extension": [ ".cpp", ".hpp", ".c", ".h" ],
+  "tab_size": 4
+}
