@@ -2,10 +2,11 @@
   "display_name": "C++ ShoppingBasket, Part 2 version 2",
   "visible_filenames": [
     "item.hpp",
-    "readme.txt",
     "shopping_basket.hpp",
     "shopping_basket.cpp",
     "shopping_basket.2.tests.cpp",
+    "readme.txt",
+    "makefile",
     "cyber-dojo.sh"
   ],
   "highlight_filenames": [ "readme.txt" ],
