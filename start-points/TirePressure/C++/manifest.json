@@ -1,0 +1,18 @@
+{
+  "display_name": "C++ TirePressure",
+  "visible_filenames": [
+	"Alarm.hpp",
+    "alarm.cpp",
+    "Sensor.hpp",
+    "sensor.cpp",
+    "alarm.tests.cpp",
+    "makefile",
+    "readme.txt",
+    "cyber-dojo.sh"
+  ],
+  "highlight_filenames": [ "readme.txt" ],
+  "hidden_filenames": [ ".*\\.gcov" ],
+  "image_name": "cyberdojofoundation/gpp_googletest",
+  "filename_extension": [ ".cpp", ".hpp", ".c", ".h" ],
+  "tab_size": 4
+}

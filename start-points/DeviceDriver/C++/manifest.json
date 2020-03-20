@@ -1,0 +1,20 @@
+{
+  "display_name": "C++ DeviceDriver",
+  "visible_filenames": [
+    "DeviceDriver.cpp",
+    "DeviceDriver.hpp",
+    "DeviceDriverTest.cpp",
+    "FlashMemoryDevice.hpp",
+    "GMockMemoryDevice.hpp",
+    "MockMemoryDevice.cpp",
+    "MockMemoryDevice.hpp",
+    "makefile",
+    "readme.txt",
+    "cyber-dojo.sh"
+  ],
+  "highlight_filenames": [ "readme.txt" ],
+  "hidden_filenames": [ ".*\\.gcov" ],
+  "image_name": "cyberdojofoundation/gpp_googletest",
+  "filename_extension": [ ".cpp", ".hpp", ".c", ".h" ],
+  "tab_size": 4
+}
