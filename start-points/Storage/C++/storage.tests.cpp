@@ -14,7 +14,7 @@ TEST(Storage, scenario_name_goes_here)
     // This is example code for setting up a MockCloudStorage with expectations
     MockCloudStorage cloud;
     EXPECT_CALL(cloud, 
-                putObject("path", "filename", "data", 4)
+                putObject("path", "filename", "data")
                ).Times(Exactly(1));
     
 }

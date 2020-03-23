@@ -18,8 +18,7 @@ class CloudStorage  // interface
 public:
     virtual void putObject(std::string bucket, 
                            std::string key, 
-                           std::string data, 
-                           int length) = 0;
+                           std::string data) = 0;
     virtual void addListener(CloudStorageListener& listener) = 0;
 };
 

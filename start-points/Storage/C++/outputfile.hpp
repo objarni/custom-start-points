@@ -6,7 +6,7 @@
 class Outputfile
 {
 public:
-    virtual void write(std::string data, int length) = 0;
+    virtual void write(std::string data) = 0;
 };
 
 

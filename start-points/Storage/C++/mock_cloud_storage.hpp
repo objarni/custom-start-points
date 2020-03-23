@@ -7,10 +7,9 @@
 class MockCloudStorage : public CloudStorage
 {
 public:
-    MOCK_METHOD4(putObject, void(std::string bucket, 
+    MOCK_METHOD3(putObject, void(std::string bucket, 
                                  std::string key, 
-                                 std::string data, 
-                                 int length));
+                                 std::string data));
     MOCK_METHOD1(addListener, void(CloudStorageListener& listener));
 };
 
