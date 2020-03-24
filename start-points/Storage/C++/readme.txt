@@ -62,3 +62,5 @@ User                 Storage                CloudStorage  Outputfile
 (time passes)
  |                      |<- onPutObjectFail ----|
  |<- onFinalizeFail ----|                       |
+
+Hopefully you can now get started developing a new class that implements the "Storage" interface and uses a CloudStorage instance. Use Test-Driven Development.
