@@ -7,7 +7,9 @@ at large. For this purpose, you have designed a new interface,
 
 The application asks the storage for an Outputfile instance, which it can
 write data to. Once it has put in all the data it needs, it finalizes the
-file and this causes it to be stored either in the cloud or on disk.
+file and this causes it to be stored (read only) either in the cloud or on 
+disk. At this point you cannot write any more data to the Outputfile instance,
+it is deleted.
 
 Your current task is to create an implementation of that interface that will
 finalize files. Three scenarios are described below. You should
