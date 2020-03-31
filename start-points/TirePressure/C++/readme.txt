@@ -6,11 +6,10 @@ real tire sensor, providing random but realistic values.
 
 Write a unit test for the Alarm class. Initially, do not change
 the code for Alarm or Sensor. When you have an initial test in 
-place, review your test code together with the session facilitator.
-They will ask you to identify which SOLID design principle(s) the code 
-disobeys, and why that makes it harder to test.
+place, (or have given up!) review your test code together with the 
+session facilitator.
 
-Then you may refactor the code to make it testable. Take care when 
-refactoring not to alter the functionality, or change interfaces which 
+When the facilitator says you can, refactor the code to make it testable. 
+Take care not to alter the functionality, or change interfaces which 
 other client code may rely on. Add more tests to cover the functionality 
 of the Alarm class. 

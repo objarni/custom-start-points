@@ -1,6 +1,6 @@
 CXXFLAGS += -I.
 CXXFLAGS += -std=c++2a
-CXXFLAGS += -Wextra
+CXXFLAGS += -Wpedantic -Wall -Wextra
 CXXFLAGS += -fprofile-arcs -ftest-coverage
 
 GTEST_LIBS = -lgtest -lgtest_main -pthread

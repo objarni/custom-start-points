@@ -1,10 +1,10 @@
-#include "Alarm.hpp"
+#include "alarm.hpp"
 #include <gtest/gtest.h>
 
 using namespace ::testing;
 
-TEST(Alarm, Foobar)
+TEST(Alarm, FooBar)
 {
     Alarm *alarm = new Alarm();
-    ASSERT_EQ(true, alarm->isAlarmOn());
+    ASSERT_EQ(false, alarm->isAlarmOn());
 }
