@@ -1,13 +1,11 @@
 
 fullnameOverride: "custom-start-points"
 
-replicaCount: 3
+replicaCount: 1
 
 service:
-  port: 4526
   annotations:
     prometheus.io/scrape: "true"
-    prometheus.io/port: "4526"
 
 volumes:
   - name: custom-start-points-tmp-dir
@@ -21,7 +19,6 @@ podSecurityContext:
 
 containers:
   - name: custom-start-points
-    image: cyberdojo/custom-start-points
     securityContext:
       allowPrivilegeEscalation: false
       readOnlyRootFilesystem: true
@@ -31,17 +28,14 @@ containers:
         readOnly: false
     resources:
       requests:
-        cpu: 10m
+        cpu: 20m
         memory: 32Mi
       limits:
-        cpu: 50m
         memory: 64Mi
     livenessProbe:
       path: /alive?
-      port: 4526
     readinessProbe:
       path: /ready?
-      port: 4526
 
 envFromSecret: {}
 

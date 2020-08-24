@@ -1,26 +1,18 @@
 #!/bin/bash -Eeu
 
-readonly NAMESPACE="${1}" # beta | prod
+readonly NAMESPACE="${1}" # beta|prod
+readonly K8S_URL=https://raw.githubusercontent.com/cyber-dojo/k8s-install/master
+readonly VERSIONER_URL=https://raw.githubusercontent.com/cyber-dojo/versioner/master
+source <(curl "${K8S_URL}/sh/deployment_functions.sh")
+export $(curl "${VERSIONER_URL}/app/.env")
+readonly CYBER_DOJO_CUSTOM_START_POINTS_TAG="${CIRCLE_SHA1:0:7}"
 
-# misc env-vars are in ci context
-
-echo ${GCP_K8S_CREDENTIALS} > /gcp/gcp-credentials.json
-
-gcloud auth activate-service-account \
-  "${SERVICE_ACCOUNT}" \
-  --key-file=/gcp/gcp-credentials.json
-gcloud container clusters get-credentials \
-  "${CLUSTER}" \
-  --zone "${ZONE}" \
-  --project "${PROJECT}"
-
-helm init --client-only
-helm repo add praqma https://praqma-helm-repo.s3.amazonaws.com/
-helm upgrade \
-  --install \
-  --namespace="${NAMESPACE}" \
-  --set-string containers[0].tag=${CIRCLE_SHA1:0:7} \
-  --values .circleci/custom-start-point-values.yaml \
-  ${NAMESPACE}-custom-start-points \
-  praqma/cyber-dojo-service \
-  --version 0.2.4
+gcloud_init
+helm_init
+helm_upgrade_probe_yes_prometheus_yes \
+   "${NAMESPACE}" \
+   "custom-start-points" \
+   "${CYBER_DOJO_CUSTOM_START_POINTS_IMAGE}" \
+   "${CYBER_DOJO_CUSTOM_START_POINTS_TAG}" \
+   "${CYBER_DOJO_CUSTOM_START_POINTS_PORT}" \
+   ".circleci/k8s-general-values.yml"
