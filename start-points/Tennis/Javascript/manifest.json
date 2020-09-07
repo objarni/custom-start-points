@@ -1,5 +1,5 @@
 {
-  "display_name": "Javascript, jest",
+  "display_name": "Tennis Refactoring, Javascript, jest",
   "image_name": "cyberdojofoundation/javascript_node_jest:bad970f",
   "visible_filenames": [
     "tennis.test.js",

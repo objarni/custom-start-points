@@ -1,0 +1,18 @@
+{
+  "image_name": "cyberdojofoundation/go_testify:88b3938",
+  "display_name": "Tennis refactoring, Go, testify",
+  "visible_filenames": [
+    "Tennis_test.go",
+    "TennisGame.go",
+    "TennisGame1.go",
+    "TennisGame2.go",
+    "TennisGame3.go",
+    "cyber-dojo.sh",
+    "readme.txt"
+  ],
+  "filename_extension": [
+    ".go"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}
