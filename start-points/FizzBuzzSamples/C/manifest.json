@@ -1,0 +1,20 @@
+{
+  "image_name": "cyberdojofoundation/gcc_googletest:d3e76dc",
+  "display_name": "FizzBuzz Samples, C (gcc), GoogleTest",
+  "visible_filenames": [
+    "fizzbuzz1.h",
+    "fizzbuzz2.h",
+    "fizzbuzz3.h",
+    "fizzbuzz4.h",
+    "fizzbuzz.tests.cpp",
+    "cyber-dojo.sh",
+    "readme.txt",
+    "makefile"
+  ],
+  "filename_extension": [
+    ".go"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}
+
