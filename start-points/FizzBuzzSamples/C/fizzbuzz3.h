@@ -19,6 +19,7 @@ void fizzbuzz3()
         memset(result, 0, FIZZBUZZ3_MAX_LENGTH);
         fizzbuzz3_converter(i, result);
         printf("%s\n", result);
+        free(result);
     }
 }
 

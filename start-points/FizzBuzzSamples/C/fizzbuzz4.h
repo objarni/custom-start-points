@@ -20,6 +20,7 @@ void fizzbuzz4()
         memset(result, 0, FIZZBUZZ4_MAX_LENGTH);
         fizzbuzz4_converter(i, result);
         printf("%s\n", result);
+        free(result);
     }
 }
 
@@ -64,6 +65,7 @@ void fizzbuzz4_converter(int i, char* result)
     factors[1] = *create_factor4(5, buzz);
 
     convertWithFactors(i, result, factors, total_factors);
+    free(factors);
 
 }
 #endif //FIZZBUZZ_FIZZBUZZ4_H
