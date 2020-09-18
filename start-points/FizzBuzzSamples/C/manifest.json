@@ -12,7 +12,9 @@
     "makefile"
   ],
   "filename_extension": [
-    ".go"
+    ".h",
+    ".cpp",
+    ".c"
   ],
   "max_seconds": 10,
   "tab_size": 4

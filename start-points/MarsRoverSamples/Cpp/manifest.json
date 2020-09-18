@@ -1,0 +1,23 @@
+{
+  "image_name": "cyberdojofoundation/gpp_catch:0c5ba0d",
+  "display_name": "MarsRover Samples, C++ (g++), Catch",
+  "visible_filenames": [
+    "sample1.cpp",
+    "sample2.cpp",
+    "sample3.cpp",
+    "sample4.cpp",
+    "sample5.cpp",
+    "sample6.cpp",
+    "mars_rover.h",
+    "cyber-dojo.sh",
+    "readme.txt",
+    "makefile"
+  ],
+  "filename_extension": [
+    ".cpp",
+    ".h"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}
+
