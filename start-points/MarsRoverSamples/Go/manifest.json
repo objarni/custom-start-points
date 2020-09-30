@@ -1,0 +1,20 @@
+{
+  "image_name": "cyberdojofoundation/go_testify:88b3938",
+  "display_name": "MarsRover Samples, Go, testify",
+  "visible_filenames": [
+    "MarsRover.go",
+    "sample1_test.go",
+    "sample2_test.go",
+    "sample3_test.go",
+    "sample4_test.go",
+    "sample5_test.go",
+    "sample6_test.go",
+    "cyber-dojo.sh",
+    "readme.txt"
+  ],
+  "filename_extension": [
+    ".go"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}

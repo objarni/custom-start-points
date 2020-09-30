@@ -1,0 +1,22 @@
+{
+  "display_name": "MarsRover Samples, Javascript, jest",
+  "image_name": "cyberdojofoundation/javascript_node_jest:bad970f",
+  "visible_filenames": [
+    "mars-rover.js",
+    "plateau.js",
+    "sample1.test.js",
+    "sample2.test.js",
+    "sample3.test.js",
+    "sample4.test.js",
+    "sample5.test.js",
+    "sample6.test.js",
+    "readme.txt",
+    "cyber-dojo.sh",
+    "package.json"
+  ],
+  "filename_extension": [
+    ".js"
+  ],
+  "max_seconds": 10,
+  "tab_size": 2
+}
