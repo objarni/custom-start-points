@@ -1,17 +1,17 @@
 package marsrover
 
 import (
-	"github.com/stretchr/testify/assert"
-	"testing"
+    "github.com/stretchr/testify/assert"
+    "testing"
 )
 
 func TestFollowInstructions(t *testing.T) {
-	plateau := Plateau{maxX: 5, maxY: 5}
-	startingPosition := Coordinates{1,2}
-	marsRover := MarsRover{plateau: plateau, heading: N, position: startingPosition}
+    plateau := Plateau{maxX: 5, maxY: 5}
+    startingPosition := Coordinates{1,2}
+    marsRover := MarsRover{plateau: plateau, heading: N, position: startingPosition}
 
-	commands := []Command{B, F, L, F, F, R}
-	marsRover.acceptCommands(commands)
+    commands := []Command{B, F, L, F, F, R}
+    marsRover.acceptCommands(commands)
 
-	assert.Equal(t, "-1 2 N", marsRover.currentLocation())
+    assert.Equal(t, "-1 2 N", marsRover.currentLocation())
 }

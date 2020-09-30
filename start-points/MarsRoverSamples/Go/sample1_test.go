@@ -1,16 +1,16 @@
 package marsrover
 
 import (
-	"testing"
-	"github.com/stretchr/testify/assert"
+    "testing"
+    "github.com/stretchr/testify/assert"
 )
 
 func TestCanRotateLeft(t *testing.T) {
-	plateau := Plateau{maxX: 5, maxY: 5}
-	startingPosition := Coordinates{1,2}
-	marsRover := MarsRover{plateau: plateau, heading: N, position: startingPosition}
+    plateau := Plateau{maxX: 5, maxY: 5}
+    startingPosition := Coordinates{1,2}
+    marsRover := MarsRover{plateau: plateau, heading: N, position: startingPosition}
 
-	marsRover.turnLeft()
+    marsRover.turnLeft()
 
-	assert.Equal(t, W, marsRover.heading)
+    assert.Equal(t, W, marsRover.heading)
 }
