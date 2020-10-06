@@ -9,7 +9,6 @@
     "tsconfig.json",
     ".eslintrc.js",
     "cyber-dojo.sh",
-    "jest.config.js",
     "package.json",
     "readme.txt"
   ],
