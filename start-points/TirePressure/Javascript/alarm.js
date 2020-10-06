@@ -2,25 +2,23 @@
 
 const {createSensor} = require('./sensor');
 
-
 function createAlarm() {
+   const lowPressureThreshold = 17;
+   const highPressureThreshold = 21;
+   const sensor = createSensor();
+   let isOn = false;
+  
     return {
-      lowPressureThreshold: 17,
-      highPressureThreshold: 21,
-      sensor: createSensor(),
-      isOn: false,
+      check: () => {
+         var psiPressureValue = sensor.popNextPressurePsiValue();
+         if (psiPressureValue < lowPressureThreshold || highPressureThreshold < psiPressureValue)
+         {
+           isOn = true;
+         }
+         
+      },
+      isOn: () => isOn
     };
-}
-
-function check(alarm) {
-  var psiPressureValue = alarm.sensor.popNextPressurePsiValue();
-
-  if (psiPressureValue < alarm.lowPressureThreshold || alarm.highPressureThreshold < psiPressureValue)
-  {
-    alarm.isOn = true;
-  }
-  return alarm;
-}
-     
+}  
 
 module.exports = {createAlarm, check};
