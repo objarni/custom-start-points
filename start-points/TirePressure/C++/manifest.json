@@ -1,5 +1,5 @@
 {
-  "display_name": "C++ TirePressure",
+  "display_name": "Tire Pressure, C++, googlemock",
   "visible_filenames": [
 	  "alarm.hpp",
     "alarm.cpp",
