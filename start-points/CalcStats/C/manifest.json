@@ -1,0 +1,20 @@
+{
+  "image_name": "cyberdojofoundation/gcc_googletest:d3e76dc",
+  "display_name": "CalcStats, C (gcc), GoogleTest",
+  "visible_filenames": [
+    "calcstats.h",
+    "calcstats.c",
+    "calcstats.tests.cpp",
+    "cyber-dojo.sh",
+    "readme.txt",
+    "makefile"
+  ],
+  "filename_extension": [
+    ".h",
+    ".cpp",
+    ".c"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}
+
