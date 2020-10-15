@@ -1,0 +1,21 @@
+{
+  "image_name": "cyberdojofoundation/gcc_googletest:d3e76dc",
+  "display_name": "RecentlyUsedList, C (gcc), GoogleTest",
+  "visible_filenames": [
+    "recently_used_list.h",
+    "recently_used_list.c",
+    "recently_used_list.tests.cpp",
+    "main.c",
+    "cyber-dojo.sh",
+    "readme.txt",
+    "makefile"
+  ],
+  "filename_extension": [
+    ".h",
+    ".cpp",
+    ".c"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}
+
