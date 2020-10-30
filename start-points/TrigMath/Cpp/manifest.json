@@ -1,0 +1,20 @@
+{
+  "image_name": "cyberdojofoundation/gpp_googletest:5b147ee",
+  "display_name": "TrigMath, C++ (g++), GoogleTest",
+  "visible_filenames": [
+    "trig_math.h",
+    "trig_math.cpp",
+    "trig_math.tests.cpp",
+    "cyber-dojo.sh",
+    "readme.txt",
+    "makefile"
+  ],
+  "filename_extension": [
+    ".cpp",
+    ".hpp",
+    ".c",
+    ".h"
+  ],
+  "max_seconds": 15,
+  "tab_size": 4
+}
