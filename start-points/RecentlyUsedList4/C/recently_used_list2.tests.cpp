@@ -29,7 +29,6 @@ TEST(RecentlyUsedList, drop_least_recently_used2)
     {
         ASSERT_EQ(expected_pages[i], actual_pages[i]);
     }
-    
-    rec
+
 }
 
