@@ -9,6 +9,5 @@ using namespace ::testing;
 
 TEST(AlarmTest, AlarmIsOn)
 {
-    check();
-    ASSERT_EQ(true, ALARM_ON);
+    ASSERT_EQ(false, ALARM_ON);
 }
