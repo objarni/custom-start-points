@@ -1,9 +1,10 @@
 
 #include <stdlib.h>
+#include <time.h>
 
 float popNextPressurePsiValue()
 {
-// placeholder implementation that simulates a real sensor 
+    // placeholder implementation that simulates a real sensor 
     // in a real tire
     time_t t;
     srand((unsigned) time(&t));
