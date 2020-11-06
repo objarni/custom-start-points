@@ -1,5 +1,5 @@
 {
-  "display_name": "C++ HtmlTextConverter",
+  "display_name": "HtmlConverter, C++, GoogleTest",
   "visible_filenames": [
     "HtmlTextConverter.hpp",
     "HtmlTextConverter.cpp",
