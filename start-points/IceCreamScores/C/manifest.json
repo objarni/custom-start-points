@@ -1,0 +1,22 @@
+{
+  "image_name": "cyberdojofoundation/gcc_googletest:4749b24",
+  "display_name": "Ice Cream Scores, C (gcc), GoogleTest",
+  "visible_filenames": [
+    "scorer.h",
+    "scorer.c",
+    "scoreboard.h",
+    "scoreboard.c",
+    "ice_cream.tests.cpp",
+    "cyber-dojo.sh",
+    "readme.txt",
+    "makefile"
+  ],
+  "filename_extension": [
+    ".h",
+    ".cpp",
+    ".c"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}
+
