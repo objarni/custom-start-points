@@ -25,7 +25,7 @@ void printScoreboard()
 void printScore(const char *name) {
     if (strcmp(name, "Steve") == 0)
     {
-        selection = strawberry;
+        flavour = strawberry;
     }
     else
     {
