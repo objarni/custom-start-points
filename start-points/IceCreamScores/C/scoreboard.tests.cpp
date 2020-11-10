@@ -9,6 +9,7 @@ using namespace ::testing;
 
 TEST(ScoreboardTest, scorer)
 {
-    printScoreboard();
+	//TODO: finish this test
+    //printScoreboard();
 }
 
