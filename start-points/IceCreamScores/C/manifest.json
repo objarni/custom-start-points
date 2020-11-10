@@ -6,7 +6,8 @@
     "scorer.c",
     "scoreboard.h",
     "scoreboard.c",
-    "ice_cream.tests.cpp",
+    "scorer.tests.cpp",
+    "scoreboard.tests.cpp",
     "cyber-dojo.sh",
     "readme.txt",
     "makefile"

@@ -2,25 +2,38 @@
 
 #include "scorer.h"
 
-enum IceCream selection;
+enum IceCream flavour;
 
 int getScore() {
-    switch (selection) {
+    bool sunnyToday = lookupWeather();
+    switch (flavour) {
         case strawberry:
-            return 5;
+            if (sunnyToday)
+                return 10;
+            else
+                return 5;
         case chocolate:
             return 6;
         case vanilla:
-            return 1;
+            if (sunnyToday)
+                return 7;
+            else
+                return 5;
         default:
             return -1;
     }
 }
 
-void updateSelection()
+bool lookupWeather()
 {
-    //this will generate random number in range 0 - 3
-    int randNum = (rand() % (4));
-    selection = randNum;
+    // placeholder implementation - real version would make API call to weather service
+    bool sunny = rand() % 2;
+    return sunny;
 }
 
+void updateSelection()
+{
+    // placeholder implementation - real version would use machine learning to predict sales
+    int randNum = rand() % 4;
+    flavour = randNum;
+}
