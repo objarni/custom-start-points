@@ -1,0 +1,13 @@
+{
+  "image_name": "cyberdojofoundation/gcc_cgreen:cb5e189",
+  "display_name": "Tennis1 refactoring, C (gcc), Cgreen",
+  "visible_filenames": [
+    "tennis.h",
+    "tennis.c",
+    "tennis_tests.c",
+    "readme.txt",
+    "Makefile",
+    "cyber-dojo.sh"
+  ],
+  "filename_extension" : [ ".c", ".h" ]
+}
