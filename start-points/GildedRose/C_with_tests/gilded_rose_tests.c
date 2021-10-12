@@ -10,7 +10,7 @@ AfterEach(gilded_rose) {}
 char description[MAX_ITEM_DESCRIPTION_LENGTH];
     
 static void do_update_quality(char* name, int sellIn, int quality, char* description) {
-    Item items[2];
+    Item items[1];
     init_item(items, name, sellIn, quality);
     update_quality(items, 1);
     print_item(description, &items[0]);

@@ -6,7 +6,7 @@ BeforeEach(gilded_rose) {}
 AfterEach(gilded_rose) {}
 
 Ensure(gilded_rose, update_quality) {
-    Item items[2];
+    Item items[1];
     init_item(items, "Foo", 0, 0);
     update_quality(items, 1);
     assert_that("fixme", is_equal_to_string(items[0].name));
