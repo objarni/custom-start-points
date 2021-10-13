@@ -1,0 +1,15 @@
+{
+  "image_name": "cyberdojofoundation/gcc_cgreen:cb5e189",
+  "display_name": "Tire Pressure, C (gcc), Cgreen",
+  "visible_filenames": [
+    "alarm.h",
+    "alarm.c",
+    "alarm_tests.c",
+    "sensor.h",
+    "sensor.c",
+    "readme.txt",
+    "Makefile",
+    "cyber-dojo.sh"
+  ],
+  "filename_extension" : [ ".c", ".h" ]
+}
