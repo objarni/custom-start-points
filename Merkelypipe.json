@@ -1,0 +1,9 @@
+{
+    "owner": "cyber-dojo",
+    "name": "custom-start-points",
+    "description": "Custom exercises choices",
+    "visibility": "public",
+    "template": [
+        "artifact"
+    ]
+}
