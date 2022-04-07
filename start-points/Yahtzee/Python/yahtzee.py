@@ -15,10 +15,7 @@ class Yahtzee():
         counts = [0]*(len(dice)+1)
         for die in dice:
             counts[die-1] += 1
-        for i in range(len(counts)):
-            if counts[i] == 5:
-                return 50
-        return 0
+        return next((50 for i in range(len(counts)) if counts[i] == 5), 0)
     
     @staticmethod
     def ones( d1,  d2,  d3,  d4,  d5):
@@ -77,11 +74,7 @@ class Yahtzee():
         self.dice[4] = _5
     
     def fours(self):
-        sum = 0
-        for at in range(5):
-            if (self.dice[at] == 4): 
-                sum += 4
-        return sum
+        return sum(4 for at in range(5) if (self.dice[at] == 4))
     
 
     def fives(self):
@@ -109,10 +102,7 @@ class Yahtzee():
         counts[d4-1] += 1
         counts[d5-1] += 1
         at = 0
-        for at in range(6):
-            if (counts[6-at-1] == 2):
-                return (6-at)*2
-        return 0
+        return next(((6-at)*2 for at in range(6) if (counts[6-at-1] == 2)), 0)
     
     @staticmethod
     def two_pair( d1,  d2,  d3,  d4,  d5):
@@ -128,11 +118,8 @@ class Yahtzee():
             if (counts[6-i-1] == 2):
                 n = n+1
                 score += (6-i)
-                    
-        if (n == 2):
-            return score * 2
-        else:
-            return 0
+
+        return score * 2 if (n == 2) else 0
     
     @staticmethod
     def four_of_a_kind( _1,  _2,  d3,  d4,  d5):
@@ -142,10 +129,7 @@ class Yahtzee():
         tallies[d3-1] += 1
         tallies[d4-1] += 1
         tallies[d5-1] += 1
-        for i in range(6):
-            if (tallies[i] == 4):
-                return (i+1) * 4
-        return 0
+        return next(((i+1) * 4 for i in range(6) if (tallies[i] == 4)), 0)
     
 
     @staticmethod
@@ -156,10 +140,7 @@ class Yahtzee():
         t[d3-1] += 1
         t[d4-1] += 1
         t[d5-1] += 1
-        for i in range(6):
-            if (t[i] == 3):
-                return (i+1) * 3
-        return 0
+        return next(((i+1) * 3 for i in range(6) if (t[i] == 3)), 0)
     
 
     @staticmethod
@@ -216,15 +197,12 @@ class Yahtzee():
             if (tallies[i] == 2): 
                 _2 = True
                 _2_at = i+1
-            
+
 
         for i in range(6):
             if (tallies[i] == 3): 
                 _3 = True
                 _3_at = i+1
-            
 
-        if (_2 and _3):
-            return _2_at * 2 + _3_at * 3
-        else:
-            return 0
+
+        return _2_at * 2 + _3_at * 3 if (_2 and _3) else 0
